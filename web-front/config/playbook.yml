@@ -1,0 +1,4 @@
+- hosts: web-front
+  tasks:
+    - name: Update APT
+      command: apt-get update
