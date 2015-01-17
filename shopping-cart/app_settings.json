@@ -2,6 +2,8 @@
   "domain": "dev.custom-integrations.com.",
   "organization": "custom-integrations",
   "admin_email": "dave.arnold@custom-integrations.com",
+  "service_port": 80,
+  "service_healthcheck": "/healthcheck",
   "git_url": "https://github.com/djaboxx/TestProject",
   "configuration_url": "https://github.com/djaboxx/TestProject/config.yml",
   "dependencies": {
@@ -13,6 +15,12 @@
               "password": "hunter2"}
   },
   "instances": 3,
+  "key_pair": "devops",
+  "user": "ubuntu",
+  "security_group": "devops",
+  "allow_ssh": True,
+  "vpc_id": "vpc-19ce0b7c",
+  "subnet_id": "subnet-7ee28344",
   "instance_type": "m3.large",
   "ami_id": "ami-9eaa1cf6",
   "region": "us-east-1"
